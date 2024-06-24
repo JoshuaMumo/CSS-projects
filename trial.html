@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trial</title>
+    <style>
+        .content{
+            padding: 7%;
+            background-color: rgb(255, 255, 255);
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+        }
+        .column{
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+<div class="row">
+    <div class="column">
+    <b>Target Moves </b>    
+    <ul>
+      <li><input type="radio" name="target-moves" id="all-posted-entries" checked>
+        <label for="all-posted-entries">All Posted Entries</label></li>
+      <li><input type="radio" name="target-moves" id="all-entries">
+        <label for="all-entries">All Entries</label></li>
+    </ul>
+</div>
+<div class="column">
+    <b>Sort by</b>
+    <ul>
+      <li><input type="radio" name="sort-by" id="date" checked>
+        <label for="date">Date</label></li>
+      <li><input type="radio" name="sort-by" id="journal-partner">
+        <label for="journal-partner">Journal & Partner</label></li>
+    </ul>
+    </p>
+</div>
+  </div>
+</body>
+</html>

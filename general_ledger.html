@@ -45,7 +45,7 @@
           }
           
           .content {
-            padding: 20px;
+            padding: 30px;
             background-color: #f2f2f2;
           }
       button {
@@ -79,6 +79,7 @@
         background-color: #f0f0f0;
         border: 1px solid #ddd; 
       }
+
         .select-options {
           display: none;
       }
@@ -167,6 +168,13 @@
           display: inline;
           margin: 0;
       }
+      .row{
+        display: flex ;
+        margin-bottom: 10px;
+      }
+      .column{
+        flex: 1;
+      }
       .dropdown {
         position: relative;
         display: inline-block;
@@ -208,7 +216,9 @@
   <a class="nav-link" href="#">Reporting</a>
   <a class="nav-link" href="#">Configuration</a>
 </div>
-<p>
+<div class="content">
+<div class="row">
+  <div class="column">
     <b>Target Moves </b>    
     <ul>
       <li><input type="radio" name="target-moves" id="all-posted-entries" checked>
@@ -216,6 +226,8 @@
       <li><input type="radio" name="target-moves" id="all-entries">
         <label for="all-entries">All Entries</label></li>
     </ul>
+  </div>
+  <div class="column">
     <b>Sort by</b>
     <ul>
       <li><input type="radio" name="sort-by" id="date" checked>
@@ -224,6 +236,8 @@
         <label for="journal-partner">Journal & Partner</label></li>
     </ul>
     </p>
+  </div>
+  </div>
   <p><b>Display Accounts</b>
     <ul>
       <li><input type="radio" name="display-accounts" id="all" checked>
@@ -233,16 +247,19 @@
       <li><input type="radio" name="display-accounts" id="with-balance">
         <label for="with-balance">With balance is not equal to 0</label></li>
     </ul>
-    <b>Include Initial Balances</b>
+    <b>Include Initial Balances</b><br>
     <input type="checkbox">
     </p>
-
-    <p>
+<div class="row">
+<div class="column">
       <label for="start-date" class="form-label" style="font-weight: bold">Start Date</label>
       <input type="date" class="form-control" id="start-date" name="start-date"/>
+    </div>
+  <div class="column">
       <label for="end-date" class="form-label" style="font-weight: bold">End Date</label>
       <input type="date" class="form-control" id="end-date" name="end-date" />
-    </p>
+  </div>
+</div>
     <p><b>Journals</b><br>
       <select class="form-select" aria-label="Default select example">
         <option value="customer-invoices">Customer Invoices</option>
@@ -257,8 +274,7 @@
       </select>
   </p>
   <p><b>Analytic Accounts</b><br>
-    <select class="form-select" aria-label="Default select example">
-    </select>
+    <input type="text">
     </p>
     <p><b>Accounts</b><br>
     <input type="text">
@@ -368,5 +384,6 @@
           </tr>
         </tbody>
       </table>
+    </div>
     </body>
   </html>
