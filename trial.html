@@ -36,6 +36,19 @@
         label {
             margin-left: 5px; /* Space between input and label */
         }
+        input[type="text"] {
+            width: 100%; /* Adjust the width as needed */
+            padding: 10px; /* Add padding for a larger height */
+            margin-top: 10px; /* Space between the textbox and the above element */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        input[type="text"]:focus {
+            border-color: #66afe9;
+            outline: none;
+            box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+        }
     </style>
 </head>
 <body>
@@ -67,6 +80,12 @@
                     </li>
                 </ul>
             </div>
+        </div>
+                <div class="row">
+                <b>Partner's: </b>
+                <input type="text" id="partners-textbox" placeholder="Enter partner's name">
+            </div>
+        </div>
         </div>
     </div>
 </body>
