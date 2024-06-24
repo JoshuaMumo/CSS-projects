@@ -238,6 +238,7 @@
     </p>
   </div>
   </div>
+  <div class="row"></div>
   <p><b>Display Accounts</b>
     <ul>
       <li><input type="radio" name="display-accounts" id="all" checked>
@@ -252,15 +253,19 @@
     </p>
 <div class="row">
 <div class="column">
-      <label for="start-date" class="form-label" style="font-weight: bold">Start Date</label>
+      <label for="start-date" class="form-label" style="font-weight: bold">Start Date<br></label>
       <input type="date" class="form-control" id="start-date" name="start-date"/>
     </div>
   <div class="column">
-      <label for="end-date" class="form-label" style="font-weight: bold">End Date</label>
+      <label for="end-date" class="form-label" style="font-weight: bold">End Date<br></label>
       <input type="date" class="form-control" id="end-date" name="end-date" />
   </div>
 </div>
-    <p><b>Journals</b><br>
+<div class="row">
+  <div class="column">
+    <b>Journals</b><br>
+  </div>
+  <div class="column">
       <select class="form-select" aria-label="Default select example">
         <option value="customer-invoices">Customer Invoices</option>
         <option value="vendor-bills">Vendor Bills</option>
@@ -272,28 +277,56 @@
         <option value="inventory-valuation">Inventory Valuation</option>
         <option value="point-of-sale">Point of Sale</option>
       </select>
-  </p>
-  <p><b>Analytic Accounts</b><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+  <b>Analytic Accounts</b><br>
+    </div>
+    <div class="column">
     <input type="text">
-    </p>
-    <p><b>Accounts</b><br>
+    </div>
+  </div>
+    <div class="row">
+      <div class="column">
+    <b>Accounts</b><br>
+      </div>
+    <div class="column">
     <input type="text">
-    </p>
-    <p><b>Partners</b><br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+    <b>Partners</b><br>
+      </div>
+    <div class="column">
     <input type="text">
-    </p>
-    <p>
+      </div>
+    </div>
+<div class="row">
       <div class="form-group">
           <button class="button" id="view-button">View</button> 
           <button class="button" id="print-button">Print</button>
           <button class="button" id="print-excel-button">Print Excel</button> 
           <button class="button" id="cancel-button">Cancel</button> 
         </div>
-      </p>
+      </div>
+      <div class="row">
       <h2>YourCompany:General Ledger</h2>
-
-      <p>Journals: <br> INV, BILL, MISC, EXCH, BNK1, CSH1, CABA, STJ </p>
-      <p>Sorted By:<br> Date</p>
+    </div>
+    <div class="row">
+      <div class="column">
+      <h5><b>Journals:</b> <br> INV, BILL, MISC, EXCH, BNK1, CSH1, CABA, STJ </h5>
+      <h5><b>Sorted By:</b><br> Date</h5>
+    </div>
+    <div class="column">
+      <h5><b>Display Account: </b><br> With Movements</h5>
+    </div>
+    <div class="column">
+      <h5><b>Target Moves:</b> <br> All Posted Entries</h5>
+    </div>
+    </div>
+    <div class="row">
       <table>
         <thead>
           <tr>
@@ -384,6 +417,7 @@
           </tr>
         </tbody>
       </table>
+    </div>
     </div>
     </body>
   </html>

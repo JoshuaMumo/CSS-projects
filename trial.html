@@ -5,41 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trial</title>
     <style>
-        .content{
-            padding: 7%;
+        .content {
+            padding: 10%;
             background-color: rgb(255, 255, 255);
         }
-        .row{
+        .row {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-between; /* Distributes space between columns */
         }
-        .column{
-            flex: 1;
+        .column {
+            flex: 1; /* Allows columns to take equal space */
+            margin-right: 20px; /* Adds space between columns */
+        }
+        .column:last-child {
+            margin-right: 0; /* Removes margin for the last column */
+        }
+        b {
+            display: block;
+            margin-bottom: 15px; /* Space between <b> and <ul> */
+            font-size: 1.2em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0; /* Removes default margin of ul */
+        }
+        li {
+            margin-bottom: 10px; /* Space between list items */
+        }
+        label {
+            margin-left: 5px; /* Space between input and label */
         }
     </style>
 </head>
 <body>
     <div class="content">
-<div class="row">
-    <div class="column">
-    <b>Target Moves </b>    
-    <ul>
-      <li><input type="radio" name="target-moves" id="all-posted-entries" checked>
-        <label for="all-posted-entries">All Posted Entries</label></li>
-      <li><input type="radio" name="target-moves" id="all-entries">
-        <label for="all-entries">All Entries</label></li>
-    </ul>
-</div>
-<div class="column">
-    <b>Sort by</b>
-    <ul>
-      <li><input type="radio" name="sort-by" id="date" checked>
-        <label for="date">Date</label></li>
-      <li><input type="radio" name="sort-by" id="journal-partner">
-        <label for="journal-partner">Journal & Partner</label></li>
-    </ul>
-    </p>
-</div>
-  </div>
+        <div class="row">
+            <div class="column">
+                <b>Target Moves</b>
+                <ul>
+                    <li>
+                        <input type="radio" name="target-moves" id="all-posted-entries" checked>
+                        <label for="all-posted-entries">All Posted Entries</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="target-moves" id="all-entries">
+                        <label for="all-entries">All Entries</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <b>Sort by</b>
+                <ul>
+                    <li>
+                        <input type="radio" name="sort-by" id="date" checked>
+                        <label for="date">Date</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="sort-by" id="journal-partner">
+                        <label for="journal-partner">Journal & Partner</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
